@@ -1,0 +1,46 @@
+{% load bootstrap4 %}
+<!DOCTY html>
+<html lang="en-us">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,  shrink-to-fit=no">
+    {% bootstrap_css %}
+    <title>Simple Pagination - Django</title>
+</head>
+<body>
+    <div class="container">
+        <br><center><h1>Simple Pagination - Premier League 2019/20</h1></center><br>
+    </div>
+
+    <div class="container">
+        <table class="table">
+
+            <thead class="table-info">
+                <tr>
+                    <th scope="col">Position</th>
+                    <th scope="col">Club</th>
+                    <th scope="col">Points</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                {% for p in page_obj %}
+                    <tr>
+                        <th scope="col">{{ p.position }}º</th>
+                        <th scope="col">{{ p.club }}</th>
+                        <th scope="col">{{ p.points }}</th>
+                    </tr>
+                {% endfor %}
+            </tbody>
+
+        </table>
+
+        {% include 'pag.html' %}
+
+    </div>
+
+
+
+    {% bootstrap_javascript jquery='full'%}
+</body>
+</html>

@@ -13,7 +13,7 @@ pip install django-bootstrap
 pip freeze > requirements.txt
 ```
 
-### You should have an application like the image below
+### You should have an application like the image below.
 
 
 

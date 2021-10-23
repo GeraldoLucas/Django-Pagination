@@ -1,5 +1,4 @@
-# Simple-Pagination-Django
-
+# Simple Django Pagination
 
 >This is a simple Pagination project - process of dividing a document into discrete pages, electronic pages or printed pages. Which was created from the Django framework in the python language
 
